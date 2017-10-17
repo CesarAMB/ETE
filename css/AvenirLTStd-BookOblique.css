@@ -1,0 +1,12 @@
+/* Webfont: AvenirLTStd-BookOblique */@font-face {
+    font-family: 'AvenirLTStd45Book';
+    src: url('AvenirLTStd-BookOblique.eot'); /* IE9 Compat Modes */
+    src: url('AvenirLTStd-BookOblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('AvenirLTStd-BookOblique.woff') format('woff'), /* Modern Browsers */
+         url('AvenirLTStd-BookOblique.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('AvenirLTStd-BookOblique.svg#AvenirLTStd-BookOblique') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
