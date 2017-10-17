@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Infraestructura | ENDTOEND</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/AvenirLTStd-Book.css" rel="stylesheet">
+  <link href="css/prettyPhoto.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <script src="js/respond.min.js"></script>
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+  <!--[if lt IE 9]>
+
+  <script src="js/html5shiv.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->       
+  <link rel="shortcut icon" href="images/ico/ete.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+  <style type="text/css">
+    #slider1{
+        background: url("images/infra/slider3/bg7.jpg") fixed;
+        position: relative;
+        background-size: cover;         
+        }  
+
+        #slider2{
+        background: url("images/infra/slider3/bg4.jpg") fixed;
+        position: relative;
+        background-size: cover;         
+        }  
+
+        #slider3{
+        background: url("images/infra/slider3/bg3.jpg") fixed;
+        position: relative;
+        background-size: cover;         
+        }  
+   @media only screen and (max-width: 768px){
+    #slider1{}
+    #slider2{}
+    #slider3{
+      background-position: center;
+    }  
+    }
+   }    
+
+
+   a {
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Helvetica;
+}
+a,
+span {
+    font-size: 20px;
+}
+svg {
+    width: 130px;
+    height: 40px;
+}
+
+/* THE SVG HOVER EFFECTS */
+.svg .button {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.svg .button rect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    stroke-width: 4px;
+    stroke-dashoffset: 400px;
+    stroke: olivedrab;
+}
+
+.svg .button span {
+    color: olivedrab;
+    width: 130px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 40px;
+    transition: all .2s linear;
+}
+
+.svg .button span:hover {
+    color: #fff;
+    background: olivedrab;
+    transition: all 1s cubic-bezier(1.25s 0, 1.15, 1, 1);
+    transition-delay: .5s;
+}
+
+.svg .button:nth-child(1):hover rect {
+    animation: draw1 .75s linear forwards;
+}
+
+@keyframes draw1 {
+    0% {
+        stroke-dasharray: 300;
+        stroke-dashoffset: 700;
+        stroke-width: 4px;
+    }
+    75% {
+        stroke-dasharray: 900;
+        stroke-width: 1px;
+    }
+    100% {
+        stroke-dasharray: 900;
+        stroke-width: 1px;
+    }
+}
+
+  </style>
+
+</head><!--/head-->
+<body>
+    <header class="navbar navbar-inverse navdes navdesbott wet-asphalt" role="banner">
+   <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class=""><font color="white">Menú</font></span>
+                    <span class=""></span>
+                    <span class=""></span>
+                    <!--<span class="icon-bar">Menu</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>!-->
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="images/logo2.png" alt="logo"></a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                
+                    <li class="active"><a href="index.html">INICIO</a></li>                   
+                    <li class="dropdown">                   
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">SOLUCIONES <i class="icon-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="nube.html">Nube</a></li>
+                            <li><a href= "serviciosjde.html"> Servicios JDE </a></li>
+                            <li><a href="infra.html">Infraestructura</a></li>
+                            <li><a href="gservicios.html">Gestión de servicios</a></li>
+                            <li><a href= "seguridad.html"> Seguridad </a></li>
+                            <li><a href="fabrica.html">Fábrica de Software</a></li>
+                            <li><a href= "colaboracion.html"> Colaboradores </a></li>
+                                       <!---li class="divider"></li.---->  <!--division por bloque---->
+                        </ul>
+                    </li>
+                    <li><a href="nosotros.html">NOSOTROS</a></li>
+                    <li><a href="portfolio.html">PORTAFOLIO</a></li>
+                    <!--<li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> SEGURIDAD <i class="icon-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="privacy.html">Aviso de privacidad</a></li>
+                        </ul>
+                    </li> !-->
+                    <li><a href="contactos.html"> CONTACTO</a></li>
+                </ul>
+            </div>
+        </div>
+  </header><!--/header-->
+   
+   <!--section id="title" class="emerald">
+        <div class="container">
+            <div class="">
+                <div class= "col-sm-8">
+                    <h1>Infraestructura</h1>
+                    <p>Make IT Real</p>
+                </div>
+                <iv class="col-sm-3">
+                    <
+                    <ul class="breadcrumb pull-right">
+                        <li><a href="index.html">INICIO</a></li>
+                        <li class="active">NOSOTROS</li>
+                    </ul> >
+                </div>
+            </div>
+        </div>
+    </section--><!--/#title-->
+
+<section id="career" class=" ">
+    <!--div class="center">
+      <h2>Arquitectura y soporte</h2>
+	</div>  
+    <hr>
+    <div class= "cent fnt18 wid50 widre80 lef10 posirela">
+        <p>Nosotros lo administramos y aseguramos enfocando en el  esfuerzo de su personal con el desarrollo de nuevas ideas, operamos las cargas de trabajo por usted.</p>
+        
+        <p>Tenemos amplia experiencia en migraciones de servidores entre diferentes versiones de sistemas operativos, configuraciones, servicios, actualizaciones, entre otros.</p>
+
+        <p>El objetivo es pasar de un esquema reactivo a uno proactivo; porque sabemos la importancia de tu negocio, detectamos cualquier eventualidad que se presente y que pueda afectar el servicio.</p>
+    </div>    
+ <hr>
+   <!-- /Career -->
+<section id="main-slider" class="no-margin mtopre-2"><!--totres-->
+        <div class="carousel slide wet-asphalt">
+            <ol class="carousel-indicators">
+                <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+                <li data-target="#main-slider" data-slide-to="1"></li>
+                <li data-target="#main-slider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active" id= "slider1">
+                    <div class="container">
+                        <div class="">
+                            <div class="col-sm-12">
+                                <div class="carousel-content center centered">
+                                   <!-- <h1 class="animation animated-item-1"> Hazlo posible 
+                                        <bR>con ENDTOEND</h1>!-->
+                                    <h2 class="animation animated-item-2"> Make IT Real</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+                <div class="item" id= "slider2">
+                    <div class="container">
+                        <div class="">
+                            <div class="col-sm-12">
+                                <div class="carousel-content center centered">
+                                   <!-- <h1 class="animation animated-item-1"> Hazlo posible 
+                                        <bR>con ENDTOEND</h1>!-->
+                                    <h1 class="animation animated-item-2">  </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+                <div class="item" id= "slider3">
+                    <div class="container">
+                        <div class="">
+                            <div class="col-sm-12">
+							<div class="carousel-content center centered">
+                                   <!-- <h1 class="animation animated-item-1"> Hazlo posible 
+                                        <bR>con ENDTOEND</h1>!-->
+                                    <h1 class="animation animated-item-2">  </h1>
+                                </div>
+                                <!--<div class="carousel-content centered">
+                                   <!-- <h2 class="animation animated-item-1"> Tecnología de principio a fin </h2>
+                                   <!-- <h2 class="animation animated-item-2">CON ENDTOEND</h2>
+                                    <!--<a class="btn btn-md animation animated-item-3" href="#">Learn More</a> !-->
+                                <!--</div>!-->
+                            </div>
+                            <!--<div class="col-sm-6 hidden-xs animation animated-item-4">
+                                <div class="centered">
+                                    <div class="embed-container">
+                                        <iframe src="//player.vimeo.com/video/69421653?title=0&amp;byline=0&amp;portrait=0&amp;color=1b355c" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                    </div>!-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+            </div><!--/.carousel-inner-->
+        </div><!--/.carousel-->
+        <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
+            <i class="icon-angle-left"><img src="images\prettyPhoto\default\sprite_prev.png"></i>
+        </a>
+        <a class="next hidden-xs" href="#main-slider" data-slide="next">
+            <i class="icon-angle-right"><img src="images\prettyPhoto\default\sprite_next.png"></i>
+        </a>
+    </section><!--/#main-slider-->
+	<!-- Detalle de ECP !-->
+ <section id="bottom" class="wet-asphalt "><!--totres-->
+    <div class="container">
+      <div class="">
+	  <br>
+        <div class="center justre">
+          <h2 class= "cent justre paddre4 inf"> Arquitectura sólida y robusta que soporte la operación y el crecimiento del negocio.</h2>
+		<br>
+		<div class= "fnt17 wid80 widre80 lef10 posirela cobl  ">
+          <p>El objetivo es pasar de un esquema reactivo a uno proactivo; porque sabemos la importancia de tu negocio y detectamos cualquier eventualidad que se presente y que pueda afectar el servicio. </p>
+        </div>  
+        </div><!--/center-->
+<br>
+<br>
+          
+        </div> <!--/.col-md-3-->
+      </div>
+    </div>
+  </section><!--/#bottom-->
+</section>
+<!--desliza imagenes!-->
+<div class= "">
+    <div class="center">
+            <h1> Servicios de Infraestructura </h1>      
+            </div>
+            <hr class= "serv">
+</div>
+	 <section class= "wid100 padd3 just fnt16 fntfooter fntre100">
+      <div class= ""> 
+       <div class= "">
+           <div class= "wid100 hei100 ">
+
+              <div class="container-fluid">
+ 
+  <!-- contenido informacion adicional -->
+
+  
+  <div class=" container mtop2 ">
+    <div id="info1" class="col-xs-12  oculto">
+      <div class= "wid100 blot  center">
+          <img src= "images/infra/pru/p1.jpg" class= " cirrinf">
+        </div>
+        <div class= "blot wid100 fnt17 center  padd9 mtop-7-5">
+          <div class= "inblock overhidd wid50  padd1"> 
+          <h2 class= "fntbol cent coaz">Gestión de monitoreo</h2>   
+               <p class= "just cogris75 fnt17">
+                  La gestión le permite monitorear sus servicios y le ofrece métodos de gobernabilidad y gestión, con la flexibilidad para poder cumplir con las necesidades del negocio
+               </p>
+            </div><div class= "overhidd inblock wid30 mleft10 padd2">
+                <h4 class= "just fnt17 coaz">
+                Servicios:
+                  
+                </h4> 
+               <ul class= "cogris75 fnt17 just ">
+                   <li>
+                       Tableros de control 
+                   </li>
+                   <li>
+                       Reportes de estado
+                   </li>
+                   <li>
+                       Métricas
+                   </li>
+                   <li>
+                       Indicadores
+                   </li>
+                   <li>
+                       Incidentes
+                   </li>
+                   <li>
+                       Alertas
+                   </li>
+               </ul>               
+          </div>
+        </div>
+    </div>
+    <div id="info2" class="col-xs-12  oculto">
+      <div class= "wid40 inblock overhidd">
+          <img src= "images/infra/iconos/virtualizacion.png" class= " medidas">
+        </div><div class= "inblock wid60">
+          <div class= " padd3 overhidd">
+                 <h2 class= " fntbol cent coaz"> Virtualización </h2> 
+                <ul class= "cogris75 fnt17">
+                    <li>
+                        Escalabilidad
+                    </li>
+                    <li>
+                        Flexibilidad
+                    </li>
+                    <li>
+                        Funcionalidad
+                    </li>
+                    <li>
+                        Dimensionamiento
+                    </li>
+                    <li>
+                        Alta disponibilidad
+                    </li>
+                    <li>
+                        Optimización de recursos
+                    </li>
+                </ul>
+                <p class= "cogris75 fnt17"> Gracias a la virtualización, se utiliza el software para simular la existencia de hardware y crear un sistema informático virtual </p>
+          </div>
+        </div> 
+    </div>
+    <div id="info3" class="col-xs-12  oculto">
+     <div class= "wid40 inblock overhidd">
+          <img src= "images/infra/iconos/comnube.png" class= " medidas">
+        </div><div class= "inblock wid60">
+          <div class= " padd3 overhidd">
+                 <h2 class= "fntbol cent coaz"> Computación en la nube </h2> 
+                  <ul class= "fnt17 cogris75">
+                        <li>
+                            laaS (Infraestructura como servicio)
+                        </li>                                 
+                        <li>
+                            PaaS (Plataforma como servicio)
+                        </li>
+                        <li>
+                            Infraestructura confiable y robusta
+                        </li>          
+                  </ul>
+                  <p class= "cogris75 fnt17">
+                      Nosotros lo administramos y aseguramos enfocado en el esfuerzo de su personal con el desarrollo de nuevas ideas, operamos las cargas de trabajo por usted.
+                  </p>
+          </div>
+        </div> 
+    </div>
+    <div id="info4" class="col-xs-12  oculto">
+     <div class= "wid40 inblock overhidd">
+          <img src= "images/infra/iconos/respaldo.png" class= " medidas">
+        </div><div class= "inblock wid60">
+          <div class= " padd3 overhidd">
+                 <h2 class= "cent coaz fntbol"> Respaldo y recuperación </h2> 
+                  <p class= "coaz fnt17"> Respaldo y recuperación en: </p>
+                  <ul class= "fnt17 cogris75">
+                      <li>
+                          Base de datos
+                      </li>
+                      <li>
+                          Archivos
+                      </li>
+                      <li>
+                          Sistemas operativos
+                      </li>
+                      <li>
+                          Aplicaciones
+                      </li>
+                      <li>
+                          Máquinas virtuales
+                      </li>
+                  </ul>
+                  <p class= "cogris75 fnt17">
+                  Aseguramos lo más valioso para la organización: La información.
+                  </p>
+
+          </div>
+        </div> 
+    </div>
+    <div id="info5" class="col-xs-12  oculto">
+      <div class= "wid40 inblock overhidd">
+          <img src= "images/infra/iconos/migra.jpg" class= " medidas">
+        </div><div class= "inblock wid60">
+          <div class= " padd3 overhidd">
+                 <h2 class= "cent coaz fntbol"> Migracion de servidores </h2> 
+                  <ul class= "cogris75 fnt17">
+                      <li>
+                          Windows
+                      </li>
+                      <li>
+                          Linux
+                      </li>
+                      <li>
+                          Unix
+                      </li>
+                      <li>
+                          Actualización de hardware y software
+                      </li>
+                      <li>
+                          Planeación de crecimiento
+                      </li>
+                  </ul>
+                  <p class= "just cogris75 fnt17"> Tenemos experiencia en migración de servidores entre diferentes versiones de sistemas operativos, configuraciones, actualizaciones, entre otros. </p>
+
+          </div>
+        </div> 
+    </div><div id="info6" class="col-xs-12  oculto">
+      <div class= "wid40 inblock overhidd">
+          <img src= "images/infra/iconos/repli.jpg" class= " medidas">
+        </div><div class= "inblock wid60">
+          <div class= " padd3 overhidd">
+                 <h2 class= "cent coaz fntbol "> Replicacion de archivos </h2> 
+                  <ul class= "cogris75 fnt17">
+                      <li>
+                          Replicación síncrona y asíncrona de información
+                      </li>
+                      <li>
+                          Replicación a sitios alternos
+                      </li>
+                      <li>
+                          Replicación a la nube
+                      </li>
+                      <li>
+                          Alta disponibilidad de la información, mantenga su información segura y siempre en línea
+                      </li>
+                  </ul>  
+
+          </div>
+        </div> 
+    </div><div id="info7" class="col-xs-12  oculto">
+     <div class= "wid40 inblock overhidd">
+          <img src= "images/infra/iconos/optisisopera.png" class= " medidas">
+        </div><div class= "inblock wid60">
+          <div class= " padd3 overhidd">
+                 <h2 class= "cent coaz fntbol "> Optimización de sistemas operativos </h2> 
+                  <ul class= "cogris75 fnt17">
+                      <li>
+                          Aplicación de mejores prácticas
+                      </li>
+                      <li>
+                          Hardening en servidores Windows, Unix, Linux
+                      </li>
+                      <li>
+                          Obtenga el mejor rendimiento de sus sistemas
+                      </li>
+                  </ul>
+
+          </div>
+        </div>
+    </div><div id="info8" class="col-xs-12  oculto">
+      <div class= "wid40 inblock overhidd">
+          <img src= "images/infra/iconos/optiapli.png" class= " medidas">
+        </div><div class= "inblock wid60">
+          <div class= " padd3 overhidd"> 
+            <h2 class= "cent coaz fntbol"> Optimiazación de aplicaciones </h2> 
+                  <ul class= "cogris75 fnt17">
+                      <li>
+                          Experiencia de ususario
+                      </li>
+                      <li>
+                          Reducción de latencia
+                      </li>
+                      <li>
+                          Utilización de herramientas de optimización
+                      </li>
+                      <li>
+                         Obtenga el mejor rendimiento de sus aplicaciones 
+                      </li>
+                      <li>
+                      Niveles de servicio (SLA's)
+                      </li>
+                  </ul>
+
+          </div>
+        </div>
+    </div><div id="info9" class="col-xs-12  oculto">
+      <div class= "wid40 inblock overhidd">
+          <img src= "images/infra/iconos/optianban.png" class= " medidas">
+        </div><div class= "inblock wid60">
+          <div class= " padd3 overhidd">
+                 <h2 class= "cent coaz fntbol"> Optimización de ancho de banda </h2> 
+                <ul class= "cogris75 fnt17">
+                      <li> Comprensión de datos </li>
+                      <li> Optimización del ancho de banda </li>
+                      <li> QoS (Calidad de servicio) </li>
+                      <li> Maximizamos el ancho de banda para lograr un mejor desempeño de su servicio </li>
+
+                  </ul>
+
+          </div>
+        </div>
+    </div><div id="info10" class="col-xs-12  oculto">
+        <div class= "wid40 inblock overhidd">
+          <img src= "images/infra/iconos/telecomu.png" class= " medidas">
+        </div><div class= "inblock wid60">
+          <div class= " padd3 overhidd">
+                 <h2 class= "cent coaz fntbol"> Telecomunicaciones </h2> 
+                  <p class= "cogris75 fnt17"> Las telecomunicaciones incluyen muchas tecnologías como la radio, televisión, teléfono y telefonía móvil, comunicaciones de datos y redes informáticas o internet.  </p>
+                  <ul class= "cogris75 fnt17">
+                      <li> Diseñamos la mejor estructura de red para ofrecer el mejor desempeño y experiencia de usuario final </li>
+                      <li> Ofrecemos tecnologías de colaboración (enterprise video, audio y Telepresencia) </li>
+                      <li> Ofrecemos tecnologías de security ( VPN, Firewalls) </li>  
+                      <li> Tecnología wireless ( APs, Meraki, etc) </li>
+                  </ul>
+          </div>
+        </div>
+    </div><div id="info11" class="col-xs-12  oculto">
+       <div class= "wid40 inblock overhidd">
+          <img src= "images/infra/iconos/balan.png" class= " medidas">
+        </div><div class= "inblock wid60">
+          <div class= " padd3 overhidd">
+                 <h2 class= "cent coaz fntbol"> Balanceo de carga </h2> 
+                  <ul class= "cogris75 fnt17">
+                    <li> Balanceadores de carga por software </li>
+                    <li> Balanceadores de carga por hardware </li>
+                    <li> Balanceo dinámico de servidores </li>
+                    <li> Especialistas en distribución de cargas ya sea DNS, base de datos, aplicaciones, etc. </li>
+                  </ul>
+          </div>
+        </div>
+    </div><div id="info12" class="col-xs-12  oculto">
+ <div class= "wid40 inblock overhidd">
+          <img src= "images/infra/iconos/database.png" class= " medidas">
+        </div><div class= "inblock wid60">
+          <div class= " padd3 overhidd">
+                 <h2 class= "cent coaz fntbol"> Base de datos </h2> 
+                 <p class= "coaz">Contamos con experiencia en:</p>
+                  <ul class= "cogris75 fnt17">
+                      <li> Implementaciones </li>
+                      <li> Mantenimientos periódicos </li>
+                      <li> Administración activa de recursos </li>
+                      <li> Creación y ejecución de consultas </li>
+                      <li> Automatización de procesos </li>
+                      <li> Análisis al estado de sistemas </li>
+                      <li> Administración de ususarios </li>
+                  </ul>
+
+          </div>
+        </div>
+    </div>
+  </div>
+            </div>
+
+<div class="svg">
+    <a class="button bshadow card-1" href="#">
+        <svg>
+            <rect height="40" width="130" fill="transparent" />
+        </svg>
+        <span>Button</span>
+    </a>
+    
+</div>
+
+    <div class="group">
+      <span class="outlineIn">
+          <div>
+          OutlineInt
+          </div>      
+      </span>
+    </div>
+
+   <div class="row center mtop5">
+     <div class="btn9 two">
+            <a href="https://plus.google.com/u/0/115875826373261470610" target="_blank">google</a>
+     </div>
+
+   <div class= "wid100 blot group">
+    <div class=" col-sm-1 col-xs wid24 inblock overhidd">
+      <a href="#info1" class="inf">  
+        <span class="outlineIn">
+        <center>
+          <div class= ""> Gestión de Monitoreo </div>
+        </center>
+        </span>
+      </a>  
+    </div><div class=" col-sm-1 col-xs svg-wrapper wid24 inblock overhidd">       
+      <a href="#info2" class="inf">
+        <span class="outlineIn">
+        <div class= "center">          
+          <p class= "textinf"> Virtualización </p>
+        </div>
+        </span>
+      </a>
+    </div><div class="col-sm-1 col-xs svg-wrapper wid24 inblock overhidd">
+    <a href="#info3" class="inf">
+        <span class="outlineIn">
+      <center>          
+          <p class= "textinf"> Computación en la nube </p>
+        </center>
+        </span>
+    </a>
+    </div><div class= "col-sm-1 col-xs svg-wrapper wid24 inblock overhidd"> 
+       <a href= "#info4" class= "inf"> 
+        <span class="outlineIn">     
+        <center>          
+          <p class= "textinf"> Respaldo y recuperación </p>
+        </center>
+        </span>
+      </a>
+    </div></div>
+    <div class= "wid100 blot mtop8 group">
+    <div class= "col-sm-1 col-xs svg-wrapper wid24 inblock overhidd">       
+      <a href= "#info5" class= "inf">
+        <span class= "outlineIn">
+        <center>          
+          <p class= "textinf"> Migracion de servidores </p>
+        </center>
+        </span>
+      </a>
+    </div>
+      <div class= "col-sm-1 col-xs svg-wrapper wid24 inblock overhidd"> 
+      <a href= "#info6" class= "inf">
+        <span class="outlineIn">     
+        <center>
+          <p class= "textinf"> Replicacion de archivos </p>
+        </center>
+        </span>
+      </a>
+    </div>
+      <div class= "col-sm-1 col-xs svg-wrapper wid24 inblock overhidd"> 
+      <a href= "#info10" class= "inf">
+      <span class="outlineIn">     
+         <center>
+          
+          <p class= "textinf"> Telecomunicaciones </p>
+        </center>
+        </span>
+      </a>
+    </div>
+
+      <div class= "col-sm-1 col-xs svg-wrapper wid24 inblock overhidd"> 
+      <a href= "#info8" class= "inf">
+      <span class="outlineIn">     
+        <center>
+          
+          <p class= "textinf"> Optimización de aplicaciones </p>
+        </center>
+        </span>
+      </a>
+    </div>
+    </div>
+    <div class= "wid100 blot mtop17 group">
+      <div class= "col-sm-1 col-xs svg-wrapper wid24 inblock overhidd">
+      <a href= "#info9" class= "inf">
+      <span class="outlineIn">     
+       <center>
+          
+          <p class= "textinf2"> Optimizadores de ancho de banda </p>
+        </center></a>
+        </span>
+    </div>
+      <div class= "col-sm-1 col-xs svg-wrapper wid24 inblock overhidd"> 
+      <a href= "#info7" class= "inf">
+      <span class="outlineIn">     
+        <center>
+          
+          <p class= "textinf3"> Optimización de sistemas operativos </p>
+        </center>
+        </span>
+      </a>
+    </div>
+
+      <div class= "col-sm-1 col-xs svg-wrapper wid24 inblock overhidd">
+      <a href= "#info11" class= "inf">
+      <span class="outlineIn">     
+       <center>
+          
+          <p class= "textinf"> Balanceo de carga </p>
+        </center></a>
+    </div>
+      <div class= "col-sm-1 col-xs svg-wrapper wid24 inblock overhidd"> 
+      <a href= "#info12" class= "inf">
+      <span class="outlineIn">     
+         <center>
+          
+          <p class= "textinf"> Base de datos </p>
+        </center>
+        </span>
+      </a>
+    </div>
+     </div> 
+      
+  </div>
+
+              <!--div class= "hei7-1 mtop50">  
+               <div class= "wid50 hei100 inblock padd2  blore centre widre100 "><div class= "wid40 cent inblock widre60  "><img class= "wid50 widre80 hei80 posiy mtop25" src= "images/infra/iconos/gesmoni.png"></div> <div class= "wid55  widre100   posirela mleft2 hei100 inblock  padd2 just  "> <p class= "cent fnt18">Gestión de monitoreo</p> 
+               <ul>
+                   <li>
+                       Tableros de control 
+                   </li>
+                   <li>
+                       Reportes de estado
+                   </li>
+                   <li>
+                       Métricas
+                   </li>
+                   <li>
+                       Indicadores
+                   </li>
+                   <li>
+                       Incidentes
+                   </li>
+                   <li>
+                       Alertas
+                   </li>
+               </ul>
+               <p class= "just">
+                  La gestión le permite monitorear sus servicios y le ofrece métodos de gobernabilidad y gestión, con la flexibilidad para poder cumplir con las necesidades del negocio
+               </p>
+                </div></div><div class= "wid50 inblock padd2 blore centre widre100 "><div class= "wid40 cent inblock widre60 "><img class= "wid50 widre80 hei80 posiy mtop25" src= "images/infra/iconos/Virtualizacion.png"></div><div class= "wid55  widre100 posirela mleft2 hei100 inblock  padd2 just"> <p class= "cent fnt18">Virtualización </p> 
+                <ul>
+                    <li>
+                        Escalabilidad
+                    </li>
+                    <li>
+                        Flexibilidad
+                    </li>
+                    <li>
+                        Funcionalidad
+                    </li>
+                    <li>
+                        Dimensionamiento
+                    </li>
+                    <li>
+                        Alta disponibilidad
+                    </li>
+                    <li>
+                        Optimización de recursos
+                    </li>
+                </ul>
+                <p> Gracias a la virtualización, se utiliza el software para simular la existencia de hardware y crear un sistema informático virtual </p>
+                </div></div>
+              </div><div class= "hei7-1">
+                  <div class= "wid50 hei100 inblock padd2 blore centre widre100 "><div class= "wid40 cent inblock widre60  posiy"><img class= "wid50 widre80 hei80 posiy mtop25" src= "images/infra/iconos/comnube.png"></div><div class= "wid55  widre100 posirela mleft2 hei100 inblock  padd2 just"> <p class= "cent fnt18">Computación en la nube </p> 
+                  <ul>
+                        <li>
+                            laaS (Infraestructura como servicio)
+                        </li>                                 
+                        <li>
+                            PaaS (Plataforma como servicio)
+                        </li>
+                        <li>
+                            Infraestructura confiable y robusta
+                        </li>          
+                  </ul>
+                  <p class= "just">
+                      Nosotros lo administramos y aseguramos enfocado en el esfuerzo de su personal con el desarrollo de nuevas ideas, operamos las cargas de trabajo por usted.
+                  </p>
+                  </div></div><div class= "wid50 inblock padd2 blore centre widre100 "><div class= "wid40 cent inblock widre60  posiy"><img class= "wid50 widre80 hei80 posiy mtop25" src= "images/infra/iconos/respaldo.png"></div><div class= "wid55  widre100 posirela mleft2 hei100 inblock  padd2 just"><p class= "cent fnt18"> Respaldo y recuperación </p> 
+                  <p> Respaldo y recuperación en: </p>
+                  <ul>
+                      <li>
+                          Base de datos
+                      </li>
+                      <li>
+                          Archivos
+                      </li>
+                      <li>
+                          Sistemas operativos
+                      </li>
+                      <li>
+                          Aplicaciones
+                      </li>
+                      <li>
+                          Máquinas virtuales
+                      </li>
+                  </ul>
+                  Aseguramos lo más valioso para la organización: La información.
+                  </div></div>
+              </div><div class= "hei7-1">
+                  <div class= "wid50 hei100 inblock padd2 blore centre widre100"><div class= "wid40 cent inblock widre60  posiy"><img class= "wid50 widre80 hei80 posiy mtop25" src= "images/infra/iconos/migra.jpg"></div><div class= "wid55  widre100 posirela mleft2 hei100 inblock  padd2 just"><p class= "cent fnt18"> Migración de servidores </p> 
+                  <ul>
+                      <li>
+                          Windows
+                      </li>
+                      <li>
+                          Linux
+                      </li>
+                      <li>
+                          Unix
+                      </li>
+                      <li>
+                          Actualización de hardware y software
+                      </li>
+                      <li>
+                          Planeación de crecimiento
+                      </li>
+                  </ul>
+                  <p class= "just"> Tenemos experiencia en migración de servidores entre diferentes versiones de sistemas operativos, configuraciones, actualizaciones, entre otros. </p>
+                  </div></div><div class= "wid50 inblock padd2 blore centre widre100"><div class= "wid40 cent inblock widre60  posiy"><img class= "wid50 widre80 hei80 posiy mtop25" src= "images/infra/iconos/repli1.jpg"></div><div class= "wid55  widre100 posirela mleft2 hei100 inblock  padd2 just"><p class= "cent fnt18"> Replicación de archivos </p> 
+                  <ul>
+                      <li>
+                          Replicación síncrona y asíncrona de información
+                      </li>
+                      <li>
+                          Replicación a sitios alternos
+                      </li>
+                      <li>
+                          Replicación a la nube
+                      </li>
+                      <li>
+                          Alta disponibilidad de la información, mantenga su información segura y siempre en línea
+                      </li>
+                  </ul>               
+                  </div></div>
+              </div><div class= "hei7-1">
+                  <div class= "wid50 hei100 inblock padd2 blore centre widre100"><div class= "wid40 cent inblock widre60 "><img class= "wid50 widre80 hei80 posiy mtop25" src= "images/infra/iconos/optisisopera.png"></div><div class= "wid55  widre100 posirela mleft2 hei100 inblock  padd2 just"> <p class= "cent fnt18"> Optimización de sistemas operativos  </p> 
+                  <ul>
+                      <li>
+                          Aplicación de mejores prácticas
+                      </li>
+                      <li>
+                          Hardening en servidores Windows, Unix, Linux
+                      </li>
+                      <li>
+                          Obtenga el mejor rendimiento de sus sistemas
+                      </li>
+                  </ul>
+                  </div></div><div class= "wid50 inblock padd2 blore centre widre100"><div class= "wid40 cent inblock widre60 "><img class= "wid50 widre80 hei80 posiy mtop25" src= "images/infra/iconos/optiapli.png"></div><div class= "wid55  widre100 posirela mleft2 hei100 inblock  padd2 just"><p class= "cent fnt18">  Optimización de aplicaciones </p> 
+                  <ul>
+                      <li>
+                          Experiencia de ususario
+                      </li>
+                      <li>
+                          Reducción de latencia
+                      </li>
+                      <li>
+                          Utilización de herramientas de optimización
+                      </li>
+                      <li>
+                         Obtenga el mejor rendimiento de sus aplicaciones 
+                      </li>
+                      <li>
+                      Niveles de servicio (SLA's)
+                      </li>
+                  </ul>
+                  </div></div>
+              </div><div class= "hei7-1">
+                  <div class= "wid50 hei100 inblock padd2 blore centre widre100"><div class= "wid40 cent inblock widre60 "><img class= "wid50 widre80 hei80 posiy mtop25" src= "images/infra/iconos/optianban.png"></div><div class= "wid55  widre100 posirela mleft2 hei100 inblock  padd2 just"> <p class= "cent"><p class= "centre fnt18"> Optimizadores de ancho de banda  </p> 
+                  <ul>
+                      <li> Comprensión de datos </li>
+                      <li> Optimización del ancho de banda </li>
+                      <li> QoS (Calidad de servicio) </li>
+                      <li> Maximizamos el ancho de banda para lograr un mejor desempeño de su servicio </li>
+
+                  </ul>
+                  </div></div><div class= "wid50 inblock padd2 blore centre widre100"><div class= "wid40 cent inblock widre60 "><img class= "wid50 widre80 hei80 posiy mtop25" src= "images/infra/iconos/drp.png"></div><div class= "wid55  widre100 posirela mleft2 hei100 inblock  padd2 just"> <p class= "cent fnt18"> DRP y DraaS </p> 
+                  <ul>
+                      <li> Diseñamos su DRP conforme a sus procesos de TI </li>
+                      <li> Gestionamos la infraestructura de su DRP </li>
+                      <li> Contamos con DraaS </li>
+                      <li> Especialistas en planes de recuperación ante desastres </li>
+                      <li> Pruebas de funcionalidad del plan de desastre </li>
+                  </ul>
+                  </div></div>
+              </div><div class= "hei7-1"> 
+                  <div class= "wid50 hei100 inblock padd2 blore centre widre100"><div class= "wid40 cent inblock widre60 "><img class= "wid50 widre80 hei80 posiy mtop25" src= "images/infra/iconos/telecomu.png"></div><div class= "wid55  widre100 posirela mleft2 hei100 inblock  padd2 just"><p class= "cent fnt18"> Telecomunicaciones <p> 
+                  <p> Las telecomunicaciones incluyen muchas tecnologías como la radio, televisión, teléfono y telefonía móvil, comunicaciones de datos y redes informáticas o internet.  </p>
+                  <ul>
+                      <li> Diseñamos la mejor estructura de red para ofrecer el mejor desempeño y experiencia de usuario final </li>
+                      <li> Ofrecemos tecnologías de colaboración (enterprise video, audio y Telepresencia) </li>
+                      <li> Ofrecemos tecnologías de security ( VPN, Firewalls) </li>  
+                      <li> Tecnología wireless ( APs, Meraki, etc) </li>
+                  </ul>
+                  </div></div><div class= "wid50 inblock padd2 blore centre widre100"><div class= "wid40 cent inblock widre60 "><img class= "wid50 widre80 hei80 posiy mtop25" src= "images/infra/iconos/balan.png"></div><div class= "wid55  widre100 posirela mleft2 hei100 inblock  padd2 just"><p class= "cent fnt18"> Balanceo de carga </p> 
+                  <ul>
+                    <li> Balanceadores de carga por software </li>
+                    <li> Balanceadores de carga por hardware </li>
+                    <li> Balanceo dinámico de servidores </li>
+                    <li> Especialistas en distribución de cargas ya sea DNS, base de datos, aplicaciones, etc. </li>
+                  </ul>
+                  </div></div>
+              </div><div class= "hei7-1">
+                  <div class= "wid50 hei100 inblock padd2 blore centre widre100"><div class= "wid40 cent inblock widre60 "><img class= "wid50 widre80 hei80 posiy  mtop25" src= "images/infra/iconos/database.png"></div><div class= "wid55  widre100 posirela mleft2 hei100 inblock  padd2 just"><p class= "cent fnt18"> Base de datos </p> 
+                    Contamos con experiencia en:
+                  <ul>
+                      <li> Implementaciones </li>
+                      <li> Mantenimientos periódicos </li>
+                      <li> Administración activa de recursos </li>
+                      <li> Creación y ejecución de consultas </li>
+                      <li> Automatización de procesos </li>
+                      <li> Análisis al estado de sistemas </li>
+                      <li> Administración de ususarios </li>
+                  </ul>
+                   </div></div><div class= "wid50 inblock padd2 blore centre widre100"><div class= "wid40 cent inblock widre60 "><img class= "wid50 widre80 hei80 posiy mtop25" src= "images/infra/iconos/forensias.png"></div><div class= "wid55  widre100 posirela mleft2 hei100 inblock  padd2 just"><p class= "cent fnt18"> Forensias </p> 
+                   <ul>
+                       <li> Correlación de eventos </li>
+                       <li> Actualizaciones de seguridad </li>
+                       <li> Firewalls </li>
+                       <li> Detección de riesgos </li>
+                       <li> Mitigación de riesgos </li>
+                       <li> Aseguramiento de aplicaciones web </li>
+                       <li> Filtrado de contenido web </li>
+                       <li> Protección antispam, antiphising y antimalware </li>
+                       <li> Administración de antivirus </li>
+                   </ul>
+                   </div></div>
+              </div-->
+           </div>
+       </div>
+      </div>
+
+
+    </section><!--/#full-works-->
+	<!--desliza imagenes!-->
+    <section id="bottom" class="wet-asphalt">
+        <div class="container">
+            <div class="">
+                <div>
+                <center><h3 class= "paddre2">Aseguramos lo más valioso para la organización: La información.</h3> 
+				<br>
+                    <div class= "wid50 widre80 ">
+                    <p><h4>Nosotros lo administramos y aseguramos enfocandolo en el  esfuerzo de su personal con el desarrollo de nuevas ideas, operamos las cargas de trabajo por usted.</h4></p>
+
+                    <!--p style="text-align: justify">Tenemos amplia experiencia en migraciones de servidores entre diferentes versiones de sistemas operativos, configuraciones, servicios, actualizaciones, entre otros.</p-->
+                    </div>  
+                    <a href="contactos.html" class= "buttoncito4 btn center" style= ""> contáctanos</a>           
+                </center>               
+                </div>
+                <!--/.col-md-3-->
+<!--
+                <div class="col-md-3 col-sm-6">
+                    <h4>Company</h4>
+                    <div>
+                        <ul class="ar">
+                            <li><a href="#">The Company</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Our Partners</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Faq</a></li>
+                            <li><a href="#">Conatct Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Copyright</a></li>
+                        </ul>
+                    </div>
+                </div><!--/.col-md-3-->
+
+                <!--<div class="col-md-3 col-sm-6">
+                    <h4>Latest Blog</h4>
+                    <div>
+                        <div class="media">
+                            <div class="pull-left">
+                                <img src="images/blog/thumb1.jpg" alt="">
+                            </div>
+                            <div class="media-body">
+                                <span class="media-heading"><a href="#">Pellentesque habitant morbi tristique senectus</a></span>
+                                <small class="muted">Posted 17 Aug 2013</small>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="pull-left">
+                                <img src="images/blog/thumb2.jpg" alt="">
+                            </div>
+                            <div class="media-body">
+                                <span class="media-heading"><a href="#">Pellentesque habitant morbi tristique senectus</a></span>
+                                <small class="muted">Posted 13 Sep 2013</small>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="pull-left">
+                                <img src="images/blog/thumb3.jpg" alt="">
+                            </div>
+                            <div class="media-body">
+                                <span class="media-heading"><a href="#">Pellentesque habitant morbi tristique senectus</a></span>
+                                <small class="muted">Posted 11 Jul 2013</small>
+                            </div>
+                        </div>
+                    </div>  
+                </div><!--/.col-md-3-->
+
+          <!--     <div class="col-md-3 col-sm-6">
+                    <h4>Dirección</h4>
+                    <address>
+                        <strong> </strong><br>
+                        Av. Lomas de Sotelo 1102 Piso 6<br>
+                        Int. 601, Col. Lomas Hermosa, <br>
+                        Del. Miguel Hidalgo, C.P. 11200, <br>
+                        México, D.F.<br>
+                        <abbr title="Phone"> Oficinas centrales: </abbr> +52 (55) 5025-4500
+                    </address> 
+                    <!--
+                    <h4>Newsletter</h4>
+                    <form role="form">
+                        <div class="input-group">
+                            <input type="text" class="form-control" autocomplete="off" placeholder="Enter your email">
+                            <span class="input-group-btn">
+                                <button class="btn btn-danger" type="button">Go!</button>
+                            </span>
+                        </div>
+                    </form>
+                </div> <!--/.col-md-3-->
+            </div>
+        </div>
+    </section><!--/#bottom-->
+	
+                
+   <section id="services">
+        <div class="container">
+            <div class="">
+                <div class="col-md-7 col-sm-7">
+                    <div class="media">
+                        <div class="pull-left">
+                           <a href="https://twitter.com/ENDTOENDMANAGME?lang=es​"> <img src=images/tt.png> </a>
+                            <!-- <i claimages/slider/bg3.jpgss="icon-twitter icon-md"></i> !--> 
+                        </div>
+                        <div class="media-body mtop1-5 mtopre3">
+                            <h3 class="media-heading">Twitter </h3>
+                            <p>Siguenos  y vive nuestras experiencias.</p>
+                        </div>
+                    </div>
+                </div><!--/.col-md-4-->
+                <div class="col-md-4 col-sm-5 ">
+                    <div class="media">
+                        <div class="pull-right">
+                             <a href="https://www.facebook.com/pages/END-TO-END-MANAGEMENT/142290102529072?ref=hl"> <img src=images/fb.png></a>
+                            <!--<i class="icon-facebook icon-md"></i>!-->
+                        </div>
+                        <div class= "media-body mtop3 ">
+                            <h3 class= "media-heading pull-right">Facebook </h3>
+                            <p class= "pull-right">Dale LIKE a la era tecnológica.</p>
+                        </div>
+                    </div>
+                </div><!--/.col-md-4-->
+                
+            </div>
+        </div>
+    </section><!--redes sociales !-->   
+      <section id="bottom" class="bagri83">
+        <div class="container">
+            <div class="row cent">
+                <img src= "images/serviciosjde/a4.png" class= "medidas4  walas  img-responsive wid10 hei10 mtop-3">
+            </div><!--/.col-md-3-->
+        </div>
+    </section><!--/#bottom-->
+
+    <footer id="footer" class="bagri83">
+            <div class= "walas">
+              <div class="footer-social mtop-7">
+                  <a target= "_blank" class="facebook" ><span class="fa fa-windows"></span></a>
+                  <a target= "_blank" class="twitter"><span class="fa fa-apple"></span></a>
+                  <a target= "_blank" class="google-plus"><span class="fa fa-linux"></span></a>
+                  <a target= "_blank" class="youtube" ><span class="fa fa-android"></span></a>
+                  <a target= "_blank" class="linkedin"><span class="fa fa-css3"></span></a>
+                  <a target= "_blank" class="dribbble" ><span class="fa fa-html5"></span></a>
+              </div>
+            </div> 
+        <hr class= "wid100">
+        <div class="container">
+            <div class="row mtop2 mbottom1">
+                <div class="col-sm-6 fntfooter pull-left">
+                <ul class="pull-right">
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="nosotros.html">NOSOTROS</a></li>
+                        <li><a href="Privacy.html">AVISO DE PRIVACIDAD</a></li>
+                        <!--li><a href="#">E-COMMERS</a></li-->
+                        <li><a id="gototop" class="gototop" href="#"><i class="icon-chevron-up"></i></a></li>
+                </ul>
+                </div>
+                <div class="col-sm-6 centre">
+                   Designed by &copy;  <a target="_blank">ENDTOEND</a>. All Rights Reserved. 
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="js/cascade-slider.js"></script>
+
+  <script>
+    $('#cascade-slider').cascadeSlider({
+      
+    });
+  </script>
+<script type="text/javascript">
+    jQuery(document).ready(function(){
+  $(".oculto").hide();              
+    $(".inf").click(function(){
+          var nodo = $(this).attr("href");  
+ 
+          if ($(nodo).is(":visible")){
+               $(nodo).hide();
+               return false;
+          }else{
+        $(".oculto").hide("fast");                             
+        $(nodo).fadeToggle("slow");
+        return false;
+          }
+    });
+}); 
+
+
+
+
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
+
+<!---jde implementacion, en la nube, instalacion y migracion>
+instalacion y migracion  capacitacion tenologica y funcio
+
+
+interfaces con otras apps y soluciones moviles
+
+
+soporte y mantenimiento outsourcing
+
+desarollos a la medida
+
+
+
+quitar nuestro expertice
+sacar informacion y agregarla al portafolio
+sacarla por complrto 
+serealizaran 4
+Porta de jde edwadrs
+  Areas
+
+(Informacion de serivcios)
+1.-Servicios de consultoeia funcional    lo funcionales dan ordenes de si se llevara a cabo y desarrollado por un desarrollador
+2.-Desarrollo jde: hasta apps moviles el resto hacia servicios de desarollo (app movil modificar en ambas) desarrolladores realizan operaciones de programación para el funcionamiento del proyecto 
+3.-Servicios de cnc: instalacion y migracion migran todo el sistema a la version mas actual o a la version que el cliente solicite, dependiendo de lo que srealize
+4,. servicios de desarrollo de software con interfaz a Jde: se quita texto desde somos para abajo,  se´pondra: implementacion soporte y mantenimiento, capacitacion tecno y funcio, analisis y desig de procesos, ana y dise de interfas, outsourcing. algo hacen
+
+
+
+
+
+Colaboracion:
+Que hace end to end con las herramientas de microsoft y componer en cada una de ñas soguientes herramientas;
+(Contact center)
+(Share) rosi hernandes
+(Out) rosi ó alejandro mendoza
+(Landes)Rosi o contact
+(Lynk) ()
+
+
+Aviso de privacidad a lado de contacto
+
+
+plugins para poner el logo de la empresa con frame
+
+Iconos en el contenido de arriba
+
+privacidad con mapa de sitio van hasta abajo
+
+
+
+
+
+
+
+
+
+
+C:\Program Files\Oracle\VirtualBox>Fuente: https://www.enmimaquinafunciona.com/p
+regunta/1612/como-ejecutar-vboxmanageexe-->

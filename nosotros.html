@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nosotros | EndtoEnd</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/AvenirLTStd-Book.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <!--Font Awesome-->
+  <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/ete.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    
+    <style type="text/css">
+        #slider1{
+        background: url("images/slider2/bg1.jpg") fixed;
+        max-height: 200%;
+        position: relative;
+        background-size: cover;         
+        }  
+
+        #slider2{
+        background: url("images/slider2/b2.jpg") fixed;
+        max-height: 200%;
+        position: relative;
+        background-size: cover;         
+        }  
+
+        #slider3{
+        background: url("images/slider2/bg3.jpg") fixed;
+        max-height: 200%;
+        position: relative;
+        background-size: cover;         
+        }  
+        #contenedor5{
+        background: url("images/nosotros/chica.jpg") ; //Imagen de fondo
+        max-height: 400%;
+        max-width: 400%;
+        background-position: 50% 35%;
+        height: 500px; //altura del fondo
+        position: relative;
+        margin: 0 auto;
+        padding: 5%;
+        background-size: cover; //ajusta el fondo a la imagen
+}
+    </style>
+</head><!--/head-->
+<body>
+    <header class="navbar navbar-inverse navdes wet-asphalt" role="banner"> <!--navbar-fixed-top  es para que se mantega fix el nav-bar-->
+       <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+					<span class=""><font color="white">Menú</font></span>
+                    <span class=""></span>
+                    <span class=""></span>
+                    <!--<span class="icon-bar">Menu</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>!-->
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="images/logo2.png" alt="logo"></a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+				
+                    <li class="active"><a href="index.html">INICIO</a></li>
+                       <li class="dropdown">                   
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">SOLUCIONES <i class="icon-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="nube.html">Nube</a></li>
+                            <li><a href= "serviciosjde.html"> Servicios JDE </a></li>
+                            <li><a href="infra.html">Infraestructura</a></li>
+                            <li><a href="gservicios.html">Gestión de servicios</a></li>
+                            <li><a href= "seguridad.html"> Seguridad </a></li>
+                            <li><a href="fabrica.html">Fábrica de Software</a></li>
+                            <li><a href= "colaboracion.html"> Colaboradores </a></li>
+                                       <!---li class="divider"></li.---->  <!--division por bloque---->
+                        </ul>
+                    </li>
+                    <li><a href="nosotros.html">NOSOTROS</a></li>
+                    <li><a href="portfolio.html">PORTAFOLIO</a></li>
+                    <!--<li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> SEGURIDAD <i class="icon-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="privacy.html">Aviso de privacidad</a></li>
+                        </ul>
+                    </li> !-->
+                    <li><a href="contactos.html"> CONTACTO</a></li>
+                </ul>
+            </div>
+        </div>
+    </header><!--/header-->
+
+    <!--section id="title" class="emerald">
+        <div class="container">
+            <div class="row">
+                <div class= "col-sm-8">
+                    <h1>Nosotros</h1>
+                    <p>Make IT Real</p>
+                </div>
+                <!--Sdiv class="col-sm-3">
+                    
+                    <ul class="breadcrumb pull-right">
+                        <li><a href="index.html">INICIO</a></li>
+                        <li class="active">NOSOTROS</li>
+                    </ul> >
+                </div!-->
+            </div>
+        </div>
+    </section><!--/#title-->
+    <!--section id="about-us" class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class= "center"><h2>La empresa </h2></div>
+				
+                <hr>
+                <div class= "cent fnt18 wid80 lef10 posirela"> 
+                    <p> Somos una consultoria que cuenta con personal calificado, la experiencia nos respalda en el  mercado de la administración en sistemas de información y software de seguridad, implementación de nuevas tecnologías y migración de servicios. </p>
+                    <p>Hemos tenido la oportunidad de participar en proyectos nacionales e internacionales, lo que nos da una visión global de las tendencias de la tecnología en el mundo, así como de las mejores prácticas de negocio. </p>
+                    <p>Contamos con personal calificado y certificado en tecnología de punta.</p>
+                </div><!-cent fnt18 wid80 lef10 posirela-->
+                <!--hr-->
+            <!--/div><!-/.col-sm-6-->
+           
+        <!--/div><!/.row-->      </div>
+        <!--/div>
+    </section--><!--/#bottom-->
+	<!--Slider-->
+<section id="main-slider" class="no-margin">
+        <div class="carousel slide wet-asphalt">
+            <ol class="carousel-indicators">
+                <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+                <li data-target="#main-slider" data-slide-to="1" class= ""></li>
+                <li data-target="#main-slider" data-slide-to="2" class= ""></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active" id= "slider1">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="carousel-content center centered">
+                                   <h1 class="boxed animation animated-item-1"> Sabemos que todo es posible. </h1>
+                                       <!-- <bR>con ENDTOEND</h1>!-->
+                                   <h1><p class="animation animated-item-1"></p></h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+                <div class="item" id= "slider2" ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="carousel-content center centered">
+                                    <h2 class="boxed animation animated-item-1"> Reconocemos el trabajo en equipo. </h2>
+                                    <!--<p class="boxed animation -item-2">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>-->
+                                    <br>
+                                    <!--<a class="btn btn-md animation -item-3" href="#">Learn More</a>!-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+                <div class="item" id= "slider3" ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="carousel-content center centered">
+                                    <h2 class="boxed animation -item-1">Valoramos tu confianza. </h2>
+                                   <!-- <h2 class="animation -item-2">CON ENDTOEND</h2>
+                                    <a class="btn btn-md animation -item-3" href="#">Learn More</a> !-->
+                                </div>
+                            </div>
+                            <!--div class="col-sm-6 hidden-xs animation -item-4">
+                                <div class="centered">
+                                    <div class="embed-container">
+                                        <iframe src="//player.vimeo.com/video/69421653?title=0&amp;byline=0&amp;portrait=0&amp;color=1b355c" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div-->
+                        </div>
+                    </div>
+                </div><!--/.item-->
+            </div><!--/.carousel-inner-->
+        </div><!--/.carousel-->
+        <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
+            <i class="icon-angle-left"><img src="images\prettyPhoto\default\sprite_prev.png"></i>
+        </a>
+        <a class="next hidden-xs" href="#main-slider" data-slide="next">
+            <i class="icon-angle-right"><img src="images\prettyPhoto\default\sprite_next.png"></i>
+        </a>
+    </section><!--/#main-fin-slider-->
+	<!-- Objetivo, mision, vision y valores !-->
+ <section id="services1">
+        <div class="container">
+            <div class="">
+			 <div class="">
+                <div class="col-lg-12">
+                    <div class="center">
+                      <div class= "">  
+                        <h1>Nuestro Objetivo</h1>
+					  </div> 	 
+                         <hr>
+                       <h3> 
+                       <div class= "fnt20">
+                            <p align="center"> Dar el mejor servicio de acuerdo a la demanda del avance tecnológico. </p></h3>
+                       </div> 
+                    </div>
+                    <div class="gap"></div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <blockquote >
+                                <h3>Nuestra Visión.</h3>
+                                 <div class= "fnt18">
+                                    <p style="text-align: justify">Ser una empresa líder en consultoría estratégica con presencia a nivel internacional.</p>
+                                 </div>    
+                            </blockquote>
+                        </div>
+                        <div class="col-md-6">
+                            <blockquote>
+                                <h3>Nuestra Misión</h3>
+                                <div class= "fnt18">
+                                    <p style="text-align: justify">Evaluar, diseñar, implementar y administrar soluciones integrales y personalizadas para cada cliente, conjugando estratégicamente el talento de nuestros colaboradores con tecnologías de valor.</p>
+                                </div>    
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<br>
+			<hr color="#1b355c"/>
+            <div class="row">
+			<div class="center"><h2> Nuestros valores </h2> </div>
+			<br>
+			<br>
+                <div class="col-md-4 col-sm-8 fnt16">
+                    <div class="media">
+                        <div class="pull-left">
+                             <img class="img-responsive " src="images/blog/thumb25.png" >
+                        </div>
+                        <div class="media-body mtop4">
+                            <h3 class="media-heading">Compromiso</h3>
+                            <p style="text-align: justify">Damos lo mejor de nosotros mismos para lograr los objetivos.</p>
+                        </div>
+                    </div>
+                </div><!--/.col-md-4-->
+                <div class="col-md-4 col-sm-8 fnt16">
+                    <div class="media">
+                        <div class="pull-left">
+                             <img class="img-responsive " src="images/blog/thumb26.png" >
+                        </div>
+                        <div class="media-body mtop4  bounce">
+                            <h3 class="media-heading">Confidencialidad</h3>
+                            <p style="text-align: justify">Somos constantes y cumplimos con nuestra palabra.</p>
+                        </div>
+                    </div>
+                </div><!--/.col-md-4-->
+                <div class="col-md-4 col-sm-8 fnt16">
+                    <div class="media">
+                        <div class="pull-left">
+                            <img class="img-responsive" src="images/blog/thumb27.png" >
+                        </div>
+                        <div class="media-body mtop4">
+                            <h3 class="media-heading">Honestidad</h3>
+                            <p style="text-align: justify">Nos comportamos y nos expresamos con coherencia y sinceridad.</p>
+                        </div>
+                    </div>
+                </div><!--/.col-md-4-->
+            </div><!--/.row-->
+            <div class="gap"></div>
+            <div class="row fnt16">
+                <div class="col-md-4 col-sm-8">
+                    <div class="media">
+                        <div class="pull-left">
+                             <img class="img-responsive" src="images/blog/thumb28.png" >
+                        </div>
+                        <div class="media-body mtop4  flipInX">
+                            <h3 class="media-heading">Actitud de Servicio</h3>
+                            <p style="text-align: justify">Satisfacemos  las necesidades y expectativas de nuestros clientes.</p>
+                        </div>
+                    </div>
+                </div><!--/.col-md-4-->
+                <div class="col-md-4 col-sm-8">
+                    <div class="media">
+                        <div class="pull-left">
+                             <img class="img-responsive" src="images/blog/thumb29.png" >
+                        </div>
+                        <div class="media-body mtop4">
+                            <h3 class="media-heading">Integridad</h3>
+                            <p style="text-align: justify">Siempre hacemos lo correcto.</p>
+                        </div>
+                    </div>
+                </div><!--/.col-md-4-->
+                <div class="col-md-4 col-sm-8">
+                    <div class="media">
+                        <div class="pull-left">
+                             <img class="img-responsive" src="images/blog/thumb30.png" >
+                        </div>
+                        <div class="media-body mtop4">
+                            <h3 class="media-heading">Eficiencia</h3>
+                            <p style="text-align: justify">Realizamos nuestro trabajo de forma óptima, rápida y correcta.</p>
+                        </div>
+                    </div>
+                </div><!--/.col-md-4-->
+            </div><!--/.row-->
+           </div>
+        </div>
+    </section><!--/#services-->
+
+<!--Inica sesion de equipo!-->
+    <section id="bottom" class="wet-asphalt">
+        <div class="container">
+		<h1 class="center">  Nosotros </h1>
+		<br>
+        <div class= "fnt19">
+            <p align="center">La calidad de nuestro servicio es el reflejo del profesionalismo de nuestro equipo.</p>
+		</div>
+        <br>
+        <div  class="row fnt17">
+            <div class="col-md-4 col-sm-6">
+                <div class="center">
+                    <p><img src="images/blog/thumb1.png" class= " In" alt=""></p>
+                    <h4 class= " InUp">Consultores Funcionales<small class="designation muted"><br> JD Edwards</small></h4>
+                    <p class= " InDown"> Expertos en diferentes areas del sistema.</p>
+                    <!--<a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>!-->
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="center">
+                    <p><img src="images/blog/thumb2.png" class= " InLeft" alt=""></p>
+                    <h4 class= " InRight">Consultores Desarrollo<small class="designation muted"><br> JD Edwards</small></h4>
+                    <p class= " InUpBig"> Programadores de JD Edwards.</p>
+                    <!--<a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>!-->
+                </div>
+            </div>        
+            <div class="col-md-4 col-sm-6">
+                <div class="center">
+                    <p><img src="images/blog/thumb3.png" class= " InLeftBig" alt=""></p>
+                    <h4 class= " InDownBig">Consultores CNC<small class="designation muted"> <br> JD Edwards</small></h4>
+                    <p class= " InLeftBig"> Configuración Net.</p>
+                    <!--<a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>!-->
+                </div>
+            </div>	
+            <div class="col-md-4 col-sm-6">
+                <div class="center">
+                    <p><img src="images/blog/thumb6.png" class= " InRightBig" alt=""></p>
+                    <h4 class= " OutUp">Ventas <small class="designation muted"><br>END TO END</small></h4>
+                    <p class= " OutDown">Marketing de empresa.</p>
+                  <!--  <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a> !-->
+                </div>
+            </div>            
+           <div class="col-md-4 col-sm-6 ">
+                <div class="center">
+                    <p><img src="images/blog/thumb5.png" class= " OutLeft" alt=""></p>
+                    <h4 class= " OutRight">Infraestructura<small class="designation muted"> <br>END TO END </small></h4>
+                    <p class= " bounceIn">Soporte técnico.</p>
+                  <!--  <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>!-->
+                </div>
+            </div>
+         <div class="col-md-4 col-sm-6">
+                <div class="center">
+                    <p><img src="images/blog/thumb4.png" class= " bounceInUp" alt=""></p>
+                    <h4 class= " bounceInDown">Contact Center<small class="designation muted"> <br>END TO END </small></h4>
+                    <p class= " bounceOutLeft">Atención a tickets para una mejor administración.</p>
+                <!--    <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a> !-->
+                </div>
+            </div>
+        </div><!--/#meet-the-team-->
+    </section><!--/#about-us-->
+    
+     <!-- Empieza sección de redes sociales-->
+    <div class= "call-to-action ">
+    <div id= "contenedor5">
+    <div class= "call-to-overlay ">
+    <div class= "container">
+
+ <section id="main-slider2" class="no-margin"> 
+        <div class="center">
+                <h2 class="tittle"> Opiniones del público </h2>
+        </div>
+        <div class="carousel mtop4">
+            <ol class="carousel-indicators ">
+                <li data-target="#main-slider2" data-slide-to= "0" class="active "></li>
+                <li data-target="#main-slider2" data-slide-to= "1" class= ""></li>
+                <li data-target="#main-slider2" data-slide-to= "2" class= ""></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class= "carousel-content center">
+                                    <div class="single-slide">
+                                    <p> "Es una empresa que se preocupa de todo hasta el ultimo detalle" </p>
+                                    <div class="single-testimonial">
+                                      <img class="testimonial-thumb" src="images/index/opinion/Danielle.jpg" alt="img">
+                                      <p> Danielle </p>
+                                      <span> Contratista </span>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+                <div class="item" >
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="carousel-content center center">
+                                   <div class="single-slide">
+                                    <p> "Es una empresa que me dejo impresionada por la calidad de su trabajo" </p>
+                                    <div class="single-testimonial">
+                                      <img class="testimonial-thumb" src="images/index/opinion/team-member2.png" alt="img">
+                                      <p> Clarita </p>
+                                      <span> Programadora </span>
+                                    </div>
+                                  </div>                              
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+                <div class="item" >
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 ">
+                                <div class="carousel-content center">
+                                    <div class="single-slide">
+                                    <p> "Es mi primera vez con ellos y realmente nunca me dejaron decepcionado " </p>
+                                    <div class="single-testimonial">
+                                      <img class="testimonial-thumb" src="images/index/opinion/Cuevas.jpg" alt="img">
+                                      <p> Carmen </p>
+                                      <span> Programador </span>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+            </div><!--/.carousel-inner-->
+            <div class= "padd3 paddre10"></div>
+        </div><!--/.carousel-->
+        <a class="prev hidden-xs" href="#main-slider2" data-slide="prev">
+            <i class="icon-angle-left"><img src="images\prettyPhoto\default\sprite_prev.png"></i>
+        </a>
+        <a class="next hidden-xs" href="#main-slider2" data-slide="next">
+            <i class="icon-angle-right"><img src="images\prettyPhoto\default\sprite_next.png"></i>
+        </a>
+    </section><!--/#main-slider2-->
+    </div>
+    </div>
+    </div>
+    </div>        
+
+
+       <section id="services">
+        <div class="container">
+            <div class="">
+                <div class="col-md-7 col-sm-7">
+                    <div class="media">
+                        <div class="pull-left">
+                           <a href="https://twitter.com/ENDTOENDMANAGME?lang=es​"> <img src=images/tt.png> </a>
+                            <!-- <i claimages/slider/bg3.jpgss="icon-twitter icon-md"></i> !--> 
+                        </div>
+                        <div class="media-body mtop1-5 mtopre3">
+                            <h3 class="media-heading">Twitter </h3>
+                            <p>Siguenos  y vive nuestras experiencias.</p>
+                        </div>
+                    </div>
+                </div><!--/.col-md-4-->
+                <div class="col-md-4 col-sm-5">
+                    <div class="media">
+                        <div class="pull-right">
+                             <a href="https://www.facebook.com/pages/END-TO-END-MANAGEMENT/142290102529072?ref=hl"> <img src=images/fb.png></a>
+                            <!--<i class="icon-facebook icon-md"></i>!-->
+                        </div>
+                        <div class= "media-body mtop3 ">
+                            <h3 class= "media-heading pull-right">Facebook </h3>
+                            <p class= "pull-right">Dale LIKE a la era tecnológica.</p>
+                        </div>
+                    </div>
+                </div><!--/.col-md-4-->
+                
+            </div>
+        </div>
+    </section><!--redes sociales !-->   
+
+      <section id="bottom" class="bagri83">
+        <div class="container">
+            <div class="row cent">
+                <img src= "images/serviciosjde/a4.png" class= "medidas4  walas  img-responsive wid10 hei10 mtop-3">
+            </div><!--/.col-md-3-->
+        </div>
+    </section><!--/#bottom-->
+
+    <footer id="footer" class="bagri83">
+            <div class= "walas">
+              <div class="footer-social mtop-7">
+                  <a target= "_blank" class="facebook" ><span class="fa fa-windows"></span></a>
+                  <a target= "_blank" class="twitter"><span class="fa fa-apple"></span></a>
+                  <a target= "_blank" class="google-plus"><span class="fa fa-linux"></span></a>
+                  <a target= "_blank" class="youtube" ><span class="fa fa-android"></span></a>
+                  <a target= "_blank" class="linkedin"><span class="fa fa-css3"></span></a>
+                  <a target= "_blank" class="dribbble" ><span class="fa fa-html5"></span></a>
+              </div>
+            </div> 
+        <hr class= "wid100">
+        <div class="container">
+            <div class="row mtop2 mbottom1">
+                <div class="col-sm-6 fntfooter pull-left">
+                <ul class="pull-right">
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="nosotros.html">NOSOTROS</a></li>
+                        <li><a href="Privacy.html">AVISO DE PRIVACIDAD</a></li>
+                        <!--li><a href="#">E-COMMERS</a></li-->
+                        <li><a id="gototop" class="gototop" href="#"><i class="icon-chevron-up"></i></a></li>
+                </ul>
+                </div>
+                <div class="col-sm-6 centre">
+                   Designed by &copy;  <a target="_blank">ENDTOEND</a>. All Rights Reserved. 
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
